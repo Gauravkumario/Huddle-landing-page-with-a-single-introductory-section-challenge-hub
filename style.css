@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-blend-mode: multiply;
+}
+
+a{
+	text-decoration: none;
+}
+
+main{
+	height: 100vh;
+	background-color: hsl(257, 40%, 49%);
+	background-image: url(images/bg-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header img{
+	padding: 3rem 4rem;
+}
+
+#main-component{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 4rem;
+}
+
+#left-div img{
+	width: 100%;
+}
+
+#left-div,#right-div{
+	width: 50%;
+}
+
+#main-component h1{
+	color: #fff;
+	padding: 3rem 4rem 1rem 4rem;
+	font-size: 42px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#main-component p{
+	color: #fff;
+	padding: 0 4rem;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'poppins',sans-serif;
+}
+
+#main-component button{
+	width: 12rem;
+	height: 3rem;
+	margin: 2rem 4rem;
+	border: none;
+	color: hsl(257, 40%, 49%);
+	cursor: pointer;
+	font-size: 18px;
+	font-family: 'poppins',sans-serif;
+	font-weight: 400;
+	border-radius: 25px;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px grey;
+}
+
+#main-component button:hover{
+	color: #fff;
+	background-color: hsl(300, 69%, 71%);
+}
+
+
+@media (max-width: 1000px){
+	main{
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-image: url(images/bg-mobile.svg);
+	}
+	header img{
+		padding: 0.5rem;
+		width: 15rem;
+	}
+	#main-component{
+		flex-direction: column;
+		padding: 0;
+	}
+	#left-div{
+		width: 100%;
+		padding: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	#left-div img{
+		width: 90%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#right-div h1{
+		padding: 0.2rem;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	#right-div{
+		width: 100%;
+		margin: 0px;
+		background-color: hsl(257, 40%, 49%);
+		text-align: center;
+		justify-content: center;
+		margin: auto;
+	}
+
+	#right-div p{
+		text-align: center;
+		padding: 1rem;
+	}
+
+	#right-div button{
+		margin: 1rem;
+	}
+}
+
+footer{
+	display: flex;
+	position: absolute;
+	right: 3rem;
+}
+
+ion-icon{
+	color: #fff;
+	font-size: 32px;
+	margin: 0 1rem;
+}
+
+ion-icon:hover{
+	color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 1000px){
+	footer{
+		padding: 2rem;
+		background-color: hsl(257, 40%, 49%);
+		position: relative;
+		justify-content: center;
+		right: 0;
+	}
+}
